@@ -31,7 +31,7 @@ public class MultiplayerGame {
     @Enumerated(value = EnumType.STRING)
     private Choices player2Choice;
 
-
+//
     private int player1Score;
 
     private int player2Score;
