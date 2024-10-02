@@ -3,16 +3,15 @@ package com.example.game.model;
 import com.example.game.model.enume.Choices;
 import jakarta.persistence.*;
 import lombok.*;
-
 import java.time.LocalDateTime;
 
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
 @Entity
-@AllArgsConstructor
-public class GameChoice {
+public class SinglePlayerGame {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -30,4 +29,5 @@ public class GameChoice {
     private String result;
 
     private LocalDateTime time;
+
 }
